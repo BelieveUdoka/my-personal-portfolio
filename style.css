@@ -81,17 +81,16 @@ nav ul li a:hover:after {
 
 nav ul i.fa-bars,
 nav ul i.fa-xmark {
+  display: block;
   position: absolute;
   top: 25px;
+  right: 35px;
   cursor: pointer;
+  z-index: 3;
 }
 
 nav ul i.fa-xmark {
-  right: 160px;
-}
-
-nav ul i.fa-bars {
-  right: 35px;
+  right: 20px;
 }
 
 .header-text {
