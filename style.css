@@ -4,17 +4,14 @@
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background: #080808;
   color: #fff;
 }
 
-/* Header Styles */
 #header {
   width: 100%;
   height: 100vh;
@@ -32,29 +29,16 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: relative;
-  z-index: 3;
 }
 
 .logo {
   width: 140px;
 }
 
-nav ul {
-  background: indigo;
-  position: absolute;
-  top: 0;
-  right: -200px;
-  width: 200px;
-  height: 100vh;
-  padding-top: 50px;
-  z-index: 2;
-  transition: right 0.5s;
-}
-
 nav ul li {
-  display: block;
-  margin: 25px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
 
 nav ul li a {
@@ -79,20 +63,6 @@ nav ul li a:hover:after {
   width: 100%;
 }
 
-nav ul i.fa-bars,
-nav ul i.fa-xmark {
-  display: block;
-  position: absolute;
-  top: 25px;
-  right: 35px;
-  cursor: pointer;
-  z-index: 3;
-}
-
-nav ul i.fa-xmark {
-  right: 20px;
-}
-
 .header-text {
   margin-top: 20%;
   font-size: 30px;
@@ -107,104 +77,80 @@ nav ul i.fa-xmark {
   color: indigo;
 }
 
-.featured-text-info {
-  font-size: 15px;
-  margin-bottom: 30px;
-  color: var(--text-color-second);
-}
-
-/* About Styles */
+/* -----------about----------- */
 #about {
-  padding: 50px 0;
-  background: #080808; /* Add a background color */
-}
-
-.top-header {
-  text-align: center;
-}
-
-.top-header h1 {
-  font-size: 40px;
-  color: #fff;
-  margin-bottom: 20px;
+  padding: 80px 0;
+  color: #ababab;
 }
 
 .row {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.col {
-  flex-basis: 48%; /* Adjust the width of the columns */
-  margin-bottom: 20px;
+.about-col-1 {
+  flex-basis: 35%;
 }
 
-.about-info {
-  background: #262626;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
 }
 
-.about-info h3 {
-  font-size: 24px;
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
   color: #fff;
-  margin-bottom: 20px;
 }
 
-.about-info p {
-  font-size: 16px;
-  color: #777;
-}
-
-.about-btn {
-  margin-top: 20px;
-}
-
-.about-btn button {
-  background: indigo;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.5s, color 0.5s;
-}
-
-.about-btn button:hover {
-  background: #fff;
-  color: indigo;
-}
-
-/* Skills Styles */
-.skills-box {
-  margin: 10px;
-}
-
-.skills-header {
-  margin-bottom: 30px;
-}
-
-.skills-list {
+.tab-titles {
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+  margin: 20px 0 40px;
 }
 
-.skills-list span {
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: indigo;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #ababab;
   font-size: 14px;
-  background: var(--first-color);
-  color: var(--color-white);
-  padding: 2px 10px;
-  border-radius: 5px;
 }
 
-/* Services Styles */
+.tab-contents {
+  display: block;
+}
+
+/* --------------------services-------------------- */
 #services {
   padding: 30px 0;
 }
@@ -249,8 +195,8 @@ nav ul i.fa-xmark {
   transform: translateY(-10px);
 }
 
-/* Projects Styles */
-#projects {
+/*-- --------------portfolio----------------------- */
+#portfolio {
   padding: 50px 0;
 }
 
@@ -318,7 +264,6 @@ nav ul i.fa-xmark {
 .work:hover .layer {
   height: 100%;
 }
-
 .btn {
   display: block;
   margin: 50px auto;
@@ -337,11 +282,7 @@ nav ul i.fa-xmark {
   color: indigo;
 }
 
-/* Contact Styles */
-#contact {
-  padding: 50px 0;
-}
-
+/* ------------------contact--------------------- */
 .contact-left {
   flex-basis: 35%;
 }
@@ -381,6 +322,7 @@ nav ul i.fa-xmark {
 .btn.btn2 {
   display: inline-block;
   background: indigo;
+  color: #fff;
 }
 
 .contact-right form {
@@ -407,7 +349,6 @@ form .btn2 {
   cursor: pointer;
 }
 
-/* Copyright Styles */
 .copyright {
   width: 100%;
   text-align: center;
@@ -415,6 +356,15 @@ form .btn2 {
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
+}
+
+.copyright i {
+  color: #4b0082;
+}
+
+/* ------------------css for small screens------------------ */
+i.fa-solid {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -426,24 +376,38 @@ form .btn2 {
     margin-top: 100%;
     font-size: 16px;
   }
-
   .header-text h1 {
     font-size: 30px;
   }
-
-  nav ul i.fa-solid {
+  i.fa-solid {
     display: block;
     font-size: 25px;
   }
 
-  nav ul i.fa-bars {
+  nav ul {
+    background: indigo;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  i.fa-bars {
     position: absolute;
     top: 25px;
     right: 35px;
     cursor: pointer;
   }
-
-  nav ul i.fa-xmark {
+  i.fa-xmark {
     position: absolute;
     top: 25px;
     right: 160px;
@@ -453,30 +417,24 @@ form .btn2 {
   .sub-title {
     font-size: 40px;
   }
-
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
   }
-
   .about-col-1 {
     margin-bottom: 30px;
   }
-
   .about-col-2 {
     font-size: 14px;
   }
-
   .tab-links {
     font-size: 16px;
     margin-right: 20px;
   }
-
   .contact-left,
   .contact-right {
     flex-basis: 100%;
   }
-
   .copyright {
     font-size: 14px;
   }

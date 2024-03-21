@@ -1,257 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-    <script
-      src="https://kit.fontawesome.com/bf57d98545.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf57d98545.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <div id="header">
-      <div class="container">
-        <nav>
-          <img src="img/Logo.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><i class="fas fa-times" onclick="closemenu()"></i></li>
-            <li><i class="fas fa-bars" onclick="openmenu()"></i></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <h1>
-            Hello,<br />
-            I'm <span class="typedText"></span>
-          </h1>
+        <div class="container">
+            <nav>
+                <img src="img/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hey there, I'm <span>Enimobong,</span><br>and I specialize in Front-End Web Development.</h1>
+            </div>
         </div>
-        <div class="featured-text-info">
-          <p>
-            With a passion for creating visually stunning and user-friendly
-            websites.
-          </p>
-        </div>
-      </div>
     </div>
+    <!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                 <div class="about-col-1">
+                    <img src="img/img.png">
+                 </div>
+                 <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Enimobong Udoka, a passionate and dedicated front-end developer with a keen eye for design and a strong commitment to creating intuitive and visually appealing web experiences.</p>
 
-    <!-- -------------- ABOUT BOX ---------------- -->
-    <section class="section" id="about">
-      <div class="top-header">
-        <h1>About Me</h1>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="about-info">
-            <h3>My introduction</h3>
-            <p>
-              I am well-versed in HTML, CSS and JavaScript , and other cutting
-              edge frameworks and libraries,which allows me to implement
-              interactive features. Additionally, I have experirence working
-              with content management systems (CMS) like WordPress.
-            </p>
-            <div class="about-btn">
-              <button class="btn">
-                Download CV <i class="uil uil-import"></i>
-              </button>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><a href="https://html-crashcourse.vercel.app/" target="_blank">HTML</a></span></li>
+                            <li><span><a href="https://css-crash-course-psi.vercel.app/" target="_blank">CSS</a></span></li>
+                            <li><span><a href="https://github.com/BelieveUdoka?tab=repositories" target="_blank">GITHUB</a></span></li>
+                        </ul>
+                    </div>
+                    
             </div>
-          </div>
         </div>
-        <div class="col">
-          <div class="skills-box">
-            <div class="skills-header">
-              <h3>Frontend</h3>
-            </div>
-            <div class="skills-list">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>Git and Github</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- --------------services----------------------- -->
-    <div id="services">
-      <div class="container">
+    </div>
+</div>
+<!-- --------------services----------------------- -->
+<div id="services">
+    <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Development</h2>
-            <p>
-              Web development is like crafting digital magic. With lines of code
-              and creativity, I bring ideas to life on the web, making beautiful
-              and functional websites that captivate and connect people in this
-              digital age.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <P>Web development is like crafting digital magic. With lines of code and creativity, I bring ideas to life on the web, making beautiful and functional websites that captivate and connect people in this digital age.</P>
+                <a href="#">Learn more</a>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- --------------portfolio----------------------- -->
-    <div id="portfolio">
-      <div class="container">
+</div>
+<!-- --------------portfolio----------------------- -->
+<div id="portfolio">
+    <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-          <div class="work">
-            <img src="img/work1.png" />
-            <div class="layer">
-              <h3>Hulu Website Clone</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                dolorum temporibus, adipisci, quae error nulla, repellendus ip
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+            <div class="work">
+                <img src="img/work1.png">
+                <div class="layer">
+                   <h3>Hulu Website Clone</h3>
+                   <p>Discover the world of entertainment on our Hulu-inspired platform, stream your favorite shows and movies seamlessly.</p>
+                   <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-          </div>
-          <div class="work">
-            <img src="img/work2.png" />
-            <div class="layer">
-              <h3>Facebook Login Page</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                dolorum temporibus, adipisci, quae error nulla, repellendus ip
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+            <div class="work" a href="https://login-page-coral-one.vercel.app/">
+                <img src="img/work2.png">
+                <div class="layer">
+                    <h3>Facebook Login Page</h3>
+                    <p>Connect, share, and stay in touch with loved ones on our Facebook-inspired platform.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                 </div>
             </div>
-          </div>
+            <div class="work">
+                <img src="img/work3.png">
+                <div class="layer">
+                    <h3>Simple Login Page</h3>
+                    <p>Login page designed to fit users needs.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                 </div>
+            </div>
         </div>
         <a href="#" class="btn">See More</a>
-      </div>
     </div>
-    <!-- --------------contact----------------------- -->
+</div>
+
+<!-- --------------contact----------------------- -->
     <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-sharp fa-solid fa-paper-plane"></i
-              >enimobongudoka243@gmail.com
-            </p>
-            <p><i class="fa-solid fa-square-phone"></i>+234 810 419 5050</p>
-            <div class="social-icons">
-              <a href="https://www.twitter.com/BelieveUdoka"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/be_li_evee?igsh=ZnI1a2d1cTY4dGN0&utm_source=qr"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/enimobong-udoka/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>enimobongudoka243@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+234 810 419 5050</p>
+                <div class="social-icons">
+                    <a href="https://www.twitter.com/BelieveUdoka"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/be_li_evee?igsh=ZnI1a2d1cTY4dGN0&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/enimobong-udoka/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
-            <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+            <div class="contact-right">
+                <form> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+            </div>
           </div>
-          <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright © Enimobong<i class="fa-solid fa-heart"></i>.2023</p>
-      </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+    <div class="copyright">
+        <p>Copyright © Enimobong<i class="fa-solid fa-heart"></i>.2023</p>
+    </div>
+</div>
 
-        function togglemenu() {
-          const menu = document.querySelector(".tab-contents");
-          menu.classList.toggle("open");
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function togglemenu(){
+            const menu =
+            document.querySelector(".tab-contents");
+            menu.classList.toggle("open");
+
         }
-
-        function opentab(tabname) {
-          for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-          }
-          for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-          }
-          event.currentTarget.classList.add("active-link");
-          document.getElementById(tabname).classList.add("active-tab");
+        function opentab(tabname){
+        for(tablink of tablinks){
+                tablink.classList.remove("active-link");
         }
-
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-          sidemenu.style.right = "0";
+        for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 
-        function closemenu() {
-          sidemenu.style.right = "-200px";
-        }
+</script>
 
-        // Typing Effect
-        var typingEffect = new Typed(".header-text h1 span", {
-          strings: ["Enimobong", "A Front-end Developer"],
-          loop: true,
-          typeSpeed: 100,
-          backSpeed: 80,
-          backDelay: 2000,
-        });
-      });
+<script>
+    var sidemenu = document.getElementById("sidemenu");
 
-      /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
-      const sr = ScrollReveal({
-        origin: "top",
-        distance: "80px",
-        duration: 2000,
-        reset: true,
-      });
-
-      /* -- ABOUT INFO & CONTACT INFO -- */
-      const srLeft = ScrollReveal({
-        origin: "left",
-        distance: "80px",
-        duration: 2000,
-        reset: true,
-      });
-
-      srLeft.reveal(".about-info", { delay: 100 });
-      srLeft.reveal(".contact-info", { delay: 100 });
-
-      /* -- ABOUT SKILLS & FORM BOX -- */
-      const srRight = ScrollReveal({
-        origin: "right",
-        distance: "80px",
-        duration: 2000,
-        reset: true,
-      });
-
-      srRight.reveal(".skills-box", { delay: 100 });
-      srRight.reveal(".form-control", { delay: 100 });
-    </script>
-  </body>
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+    
+</body>
 </html>
