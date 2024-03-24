@@ -410,13 +410,35 @@ i.fa-solid {
     background-image: url(img/phone-Blackbackground.png);
   }
 
-  .header-text {
-    margin-top: 100%;
-    font-size: 16px;
+  .featured-box {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
   }
 
-  .header-text h1 {
-    font-size: 30px;
+  .featured-text {
+    width: 100%;
+    order: 2;
+    justify-content: center;
+    align-content: flex-start;
+    min-height: 60vh;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .col {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-info {
+    width: 100%;
   }
 
   i.fa-solid {
