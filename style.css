@@ -4,9 +4,11 @@
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background: #080808;
   color: #fff;
@@ -63,91 +65,122 @@ nav ul li a:hover:after {
   width: 100%;
 }
 
-.header-text {
-  margin-top: 20%;
-  font-size: 30px;
+.featured-box {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: 700px;
 }
 
-.header-text h1 {
-  font-size: 60px;
-  margin-top: 20px;
+/* ----- FEATURED TEXT BOX ----- */
+.featured-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
 }
 
-.header-text h1 span {
+.featured-name {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  margin-block: 20px;
+}
+
+.typedText {
+  text-transform: capitalize;
   color: indigo;
 }
 
-/* -----------about----------- */
-#about {
-  padding: 80px 0;
-  color: #ababab;
+.featured-text-info {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: var(--text-color-second);
+}
+
+.section {
+  padding-block: 5em;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.about-col-1 {
-  flex-basis: 35%;
-}
-
-.about-col-1 img {
   width: 100%;
-  border-radius: 15px;
+  gap: 50px;
 }
 
-.about-col-2 {
-  flex-basis: 60%;
-}
-
-.sub-title {
-  font-size: 60px;
-  font-weight: 600;
-  color: #fff;
-}
-
-.tab-titles {
+.col {
   display: flex;
-  margin: 20px 0 40px;
-}
-
-.tab-links {
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-}
-
-.tab-links::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: indigo;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
-}
-
-.tab-links.active-link::after {
   width: 50%;
 }
 
-.tab-contents ul li {
-  list-style: none;
-  margin: 10px 0;
+.top-header {
+  text-align: center;
+  margin-bottom: 7em;
 }
 
-.tab-contents ul li span {
-  color: #ababab;
+.top-header h1 {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.top-header span {
+  color: #999;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* ----- ABOUT INFO ----- */
+.about-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 30px 70px;
+  padding-inline: 20px;
+  width: 100%;
+  background: indigo;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 20px;
+}
+
+.about-info p {
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+/* ----- ABOUT / SKILLS BOX ----- */
+.skills-box {
+  margin: 10px;
+}
+
+.skills-header {
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list span {
   font-size: 14px;
-}
-
-.tab-contents {
-  display: block;
+  background: indigo;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 5px;
 }
 
 /* --------------------services-------------------- */
@@ -264,6 +297,7 @@ nav ul li a:hover:after {
 .work:hover .layer {
   height: 100%;
 }
+
 .btn {
   display: block;
   margin: 50px auto;
@@ -322,7 +356,6 @@ nav ul li a:hover:after {
 .btn.btn2 {
   display: inline-block;
   background: indigo;
-  color: #fff;
 }
 
 .contact-right form {
@@ -376,9 +409,11 @@ i.fa-solid {
     margin-top: 100%;
     font-size: 16px;
   }
+
   .header-text h1 {
     font-size: 30px;
   }
+
   i.fa-solid {
     display: block;
     font-size: 25px;
@@ -407,6 +442,7 @@ i.fa-solid {
     right: 35px;
     cursor: pointer;
   }
+
   i.fa-xmark {
     position: absolute;
     top: 25px;
@@ -417,24 +453,30 @@ i.fa-solid {
   .sub-title {
     font-size: 40px;
   }
+
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
   }
+
   .about-col-1 {
     margin-bottom: 30px;
   }
+
   .about-col-2 {
     font-size: 14px;
   }
+
   .tab-links {
     font-size: 16px;
     margin-right: 20px;
   }
+
   .contact-left,
   .contact-right {
     flex-basis: 100%;
   }
+
   .copyright {
     font-size: 14px;
   }
