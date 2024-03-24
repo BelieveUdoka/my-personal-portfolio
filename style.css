@@ -361,7 +361,13 @@ h3 {
 
 .btn.btn2 {
   display: inline-block;
+  background: #000;
+  color: indigo;
+}
+
+.btn.btn2:hover {
   background: indigo;
+  color: #fff;
 }
 
 .contact-right form {
