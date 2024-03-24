@@ -177,6 +177,7 @@ h3 {
   gap: 30px;
   margin-top: 10px;
   color: #fff;
+  border-radius: 5px;
 }
 
 .skills-list span {
@@ -185,7 +186,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  box-shadow: 5px 2px 10px 0px indigo;
+  box-shadow: 3px 2px 5px 0px indigo;
 }
 
 /* --------------------services-------------------- */
@@ -307,18 +308,18 @@ h3 {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid indigo;
+  border: 2px solid indigo;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  background: indigo;
-  color: #fff;
+  background: #000;
+  color: indigo;
   transition: background 0.5s, color 0.5s;
 }
 
 .btn:hover {
-  background: #fff;
-  color: indigo;
+  background: indigo;
+  color: #fff;
 }
 
 /* ------------------contact--------------------- */
